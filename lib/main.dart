@@ -1209,10 +1209,6 @@ class _AnalysisScreenState extends State<AnalysisScreen> {
                   : '${isRo ? 'Decizie' : 'Decision'}: Jev (${d.jevModel ?? 'jev'}) + ${isRo ? 'reguli' : 'rules'}',
               style: small,
             ),
-            if (d.isFallback && d.fallbackReason != null) ...[
-              const SizedBox(height: 4),
-              Text('${isRo ? 'Motiv' : 'Reason'}: ${d.fallbackReason}', style: small),
-            ],
             const SizedBox(height: 6),
             Text(
               '${isRo ? 'Doar model imagine' : 'Image model only'}: '
